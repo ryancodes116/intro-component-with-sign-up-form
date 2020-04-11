@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Core Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('images/bg-intro-mobile.png');
+    color: #fff;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    justify-content: center;
+    padding: 5rem 2.5rem;
+}
+
+/* Top Section */
+.top h3 {
+    font-weight: 700;
+}
+
+.top p {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Bottom Section */
+.bottom {
+    margin: auto 0;
+}
+
+.bottom .details {
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    font-weight: 400;
+    box-shadow: 0 7px 2px -2px gray;
+    vertical-align: middle;
+}
+
+.bottom .details p {
+    margin: auto 0;
+    line-height: 1.5;
+}
+
+.bottom .details span {
+    font-weight: 800;
+    color: #fff;
+}
+
+.bottom .form {
+    background-color: #fff;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 2px -2px gray;
+}
+
+.bottom .form input {
+    margin-bottom: 0.9rem;
+    height: 3rem;
+    padding-left: 1rem;
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+}
+
+.bottom .form .form-group {
+    position: relative;
+}
+
+.bottom .form .form-group .error-icon {
+    position: absolute;
+    top: 14%;
+    right: 3%;
+    display: none;
+}
+
+.bottom .form .form-group .error-message {
+    color: hsl(0, 100%, 74%);
+    font-size: 0.8rem;
+    padding-right: 1rem;
+    display: none;
+}
+
+.bottom .form .btn {
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 0.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+    line-height: 4px;
+}
+
+.bottom .form small {
+    color: hsl(246, 25%, 77%);
+    font-weight: 500;
+    padding: 0 1rem;
+}
+
+.bottom .form small a {
+    color: hsl(0, 100%, 74%); 
+}
+
+/* Media Queries */
+
+/* Medium devices */
+@media(min-width: 768px) {
+    body {
+        background-image: url(images/bg-intro-desktop.png);
+    }
+
+    .container-fluid {
+        padding: 5rem 3rem;
+    }
+
+    .left {
+        width: 50%;
+        margin: auto 0;
+        padding-top: 3rem;
+        padding-right: 5rem;
+        text-align: left;
+    }
+
+    .left h3 {
+        font-size: 2.5rem;
+    }
+
+    .right {
+        width: 50%;
+    }
+}
+
+/* Large devices */
+@media(min-width: 992px) {
+   .container-fluid {
+    padding: 5rem 5.5rem;
+   }
+
+   .left h3 {
+       font-size: 3rem;
+   }
+}
